@@ -36,6 +36,7 @@ nav .branding h3 {
 /*heading-wrapper*/
 .heading-wrapper {
   overflow-x: hidden;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +44,6 @@ nav .branding h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -67,10 +67,10 @@ nav .branding h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -78,8 +78,11 @@ nav .branding h3 {
 }
 
 .display-wrapper .display {
-  background-color: #333;
-  width: 200px;
+  background-color: #555;
+  width: 400px;
+  margin: 0 auto;
+  color: #555;
+  z-index: 999;
 }
 
 /*end heading-wrapper*/

@@ -34,12 +34,13 @@ nav {
 }
 /*nav*/
 /*heading-wrapper*/
+
 .heading-wrapper {
   overflow-x: hidden;
-
+  height: 90vh;
   display: flex;
   flex-direction: row;
-  height: 90vh;
+
   justify-content: center;
   background-color: $headingBgColor;
   clip-path: polygon(0% 0%, 100% 0, 100% 40%, 50% 57%, 0 40%);
@@ -55,12 +56,16 @@ nav {
 .display-wrapper {
   overflow-x: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   background-color: red;
   .display {
-    background-color: #333;
-    width: 200px;
+    background-color: #555;
+    width: 400px;
+    margin: 0 auto;
+    color: #555;
+    z-index: 999;
   }
 }
+
 /*end heading-wrapper*/
