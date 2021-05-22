@@ -1,0 +1,24 @@
+/*variables*/
+$headingBgColor: #555;
+/*end variables*/
+
+/*global*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/*end global*/
+/*heading-wrapper*/
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  background-color: $headingBgColor;
+}
+/*end heading-wrapper*/
