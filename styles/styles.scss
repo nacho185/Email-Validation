@@ -61,12 +61,10 @@ nav {
 }
 .display-wrapper {
   overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
+
   justify-content: center;
   background-color: $headingBgColor;
   height: 100vh;
-  z-index: 999;
   .display {
     width: 900px;
     height: 70vh;
@@ -74,6 +72,30 @@ nav {
     margin: 0 auto;
     color: #555;
     z-index: 999;
+    background-color: #f8f8f8;
+
+    .search {
+      background-color: #fff;
+      width: fit-content;
+      padding: 10px 10px;
+      margin: 0 auto;
+      width: fit-content;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+
+      input {
+        margin-left: 20px;
+        border: none;
+        font-size: 1.2rem;
+        background-color: #fff;
+
+        &:focus {
+          outline: none;
+          background-color: none;
+        }
+      }
+    }
     .searchresults {
       display: flex;
       flex-direction: row;

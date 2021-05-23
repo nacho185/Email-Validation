@@ -66,19 +66,11 @@ nav .branding h3 {
 
 .display-wrapper {
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f7f9f9;
   height: 100vh;
-  z-index: 999;
 }
 
 .display-wrapper .display {
@@ -89,6 +81,32 @@ nav .branding h3 {
   margin: 0 auto;
   color: #555;
   z-index: 999;
+  background-color: #f8f8f8;
+}
+
+.display-wrapper .display .search {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.display-wrapper .display .search input {
+  margin-left: 20px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+
+.display-wrapper .display .search input:focus {
+  outline: none;
+  background-color: none;
 }
 
 .display-wrapper .display .searchresults {
