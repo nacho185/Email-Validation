@@ -1,7 +1,8 @@
 /*variables*/
-$headingBgColor: #f7f9f9;
+$headingBgColor: #eef1f1;
 $primary-color: #0e7162;
 $secondary-color: #666666;
+$form-bg: #f8f8f8;
 /*end variables*/
 
 /*global*/
@@ -61,21 +62,22 @@ nav {
 }
 .display-wrapper {
   overflow-x: hidden;
-
   justify-content: center;
   background-color: $headingBgColor;
   height: 100vh;
+
   .display {
+    border-top: 1px solid rgb(241, 236, 236);
+    padding-top: 15px;
     width: 900px;
     height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0 auto;
     color: #555;
     z-index: 999;
-    background-color: #f8f8f8;
+    background-color: $form-bg;
 
     .search {
-      background-color: #fff;
       width: fit-content;
       padding: 10px 10px;
       margin: 0 auto;
@@ -83,13 +85,12 @@ nav {
       border-radius: 20px;
       margin-bottom: 50px;
       margin-top: 20px;
+      background-color: #fff;
 
       input {
         margin-left: 20px;
         border: none;
         font-size: 1.2rem;
-        background-color: #fff;
-
         &:focus {
           outline: none;
           background-color: none;

@@ -47,7 +47,7 @@ nav .branding h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f7f9f9;
+  background-color: #eef1f1;
 }
 
 .heading-wrapper .heading-text-wrapper {
@@ -69,11 +69,13 @@ nav .branding h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f7f9f9;
+  background-color: #eef1f1;
   height: 100vh;
 }
 
 .display-wrapper .display {
+  border-top: 1px solid #f1ecec;
+  padding-top: 15px;
   width: 900px;
   height: 70vh;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -85,7 +87,6 @@ nav .branding h3 {
 }
 
 .display-wrapper .display .search {
-  background-color: #fff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -95,13 +96,13 @@ nav .branding h3 {
   border-radius: 20px;
   margin-bottom: 50px;
   margin-top: 20px;
+  background-color: #fff;
 }
 
 .display-wrapper .display .search input {
   margin-left: 20px;
   border: none;
   font-size: 1.2rem;
-  background-color: #fff;
 }
 
 .display-wrapper .display .search input:focus {
