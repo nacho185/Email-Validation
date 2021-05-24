@@ -50,25 +50,39 @@ nav .branding h3 {
   background-color: #eef1f1;
 }
 
-.heading-wrapper .heading-text-wrapper {
+.heading-wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.heading-wrapper .container .heading-text-wrapper {
   text-align: center;
   margin-bottom: 110px;
 }
 
-.heading-wrapper .heading-text-wrapper h1 {
+.heading-wrapper .container .heading-text-wrapper h1 {
   font-size: 2.5rem;
   color: #0e7162;
 }
 
-.heading-wrapper .heading-text-wrapper h3 {
+.heading-wrapper .container .heading-text-wrapper h3 {
   color: #666666;
+}
+
+.heading-wrapper .container .header-img .fa-user-secret {
+  font-size: 10rem;
+  color: #0e7162;
 }
 
 .display-wrapper {
   overflow-x: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #eef1f1;
   height: 100vh;
 }
@@ -84,9 +98,35 @@ nav .branding h3 {
   color: #555;
   z-index: 999;
   background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.display-wrapper .display .search {
+.display-wrapper .display .input-and-desk {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.display-wrapper .display .input-and-desk h1 {
+  color: #0e7162;
+}
+
+.display-wrapper .display .input-and-desk .search {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -99,13 +139,13 @@ nav .branding h3 {
   background-color: #fff;
 }
 
-.display-wrapper .display .search input {
+.display-wrapper .display .input-and-desk .search input {
   margin-left: 20px;
   border: none;
   font-size: 1.2rem;
 }
 
-.display-wrapper .display .search input:focus {
+.display-wrapper .display .input-and-desk .search input:focus {
   outline: none;
   background-color: none;
 }
@@ -120,6 +160,12 @@ nav .branding h3 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 50px;
 }
 
 /*end heading-wrapper*/

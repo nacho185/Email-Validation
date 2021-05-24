@@ -46,23 +46,32 @@ nav {
   flex-direction: column;
   justify-content: center;
   background-color: $headingBgColor;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .heading-text-wrapper {
+      text-align: center;
+      margin-bottom: 110px;
 
-  .heading-text-wrapper {
-    text-align: center;
-    margin-bottom: 110px;
-
-    h1 {
-      font-size: 2.5rem;
-      color: $primary-color;
+      h1 {
+        font-size: 2.5rem;
+        color: $primary-color;
+      }
+      h3 {
+        color: $secondary-color;
+      }
     }
-    h3 {
-      color: $secondary-color;
+    .header-img {
+      .fa-user-secret {
+        font-size: 10rem;
+        color: $primary-color;
+      }
     }
   }
 }
 .display-wrapper {
   overflow-x: hidden;
-  justify-content: center;
   background-color: $headingBgColor;
   height: 100vh;
 
@@ -76,24 +85,34 @@ nav {
     color: #555;
     z-index: 999;
     background-color: $form-bg;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .input-and-desk {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: $primary-color;
+      }
+      .search {
+        width: fit-content;
+        padding: 10px 10px;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        background-color: #fff;
 
-    .search {
-      width: fit-content;
-      padding: 10px 10px;
-      margin: 0 auto;
-      width: fit-content;
-      border-radius: 20px;
-      margin-bottom: 50px;
-      margin-top: 20px;
-      background-color: #fff;
-
-      input {
-        margin-left: 20px;
-        border: none;
-        font-size: 1.2rem;
-        &:focus {
-          outline: none;
-          background-color: none;
+        input {
+          margin-left: 20px;
+          border: none;
+          font-size: 1.2rem;
+          &:focus {
+            outline: none;
+            background-color: none;
+          }
         }
       }
     }
@@ -101,6 +120,9 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      height: fit-content;
+      padding: 10px 50px;
     }
   }
 }
