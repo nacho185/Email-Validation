@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/f78f2b17c0.js"
       crossorigin="anonymous"
@@ -64,20 +69,21 @@
                 placeholder="Search an email..."
                 type="text"
               />
-              <i id="button-search" class="fas fa-search"></i>
+              <i id="button-search" class="fas fa-search search-btn"></i>
             </div>
           </div>
           <div class="searchresults">
+            <p id="search-dataEmail" class="email">ignacio13542@gmail.com</p>
             <div class="normal-format">
-              <p id="search-dataEmail" class="email"></p>
-              <p id="search-dataDomain" class="domain"></p>
-              <p class="valid-syntax">true/false</p>
-              <p class="disposable">true//false</p>
-              <p class="webmail">false</p>
-              <p class="deliverable">true</p>
-              <div class="catch-all">true</div>
-              <p class="gibberish">falsee</p>
-              <p class="spam">false</p>
+              <p id="search-dataDomain" class="domain">Domain: @gmail.com</p>
+              <p id="search-dataMean">Did You Mean: -</p>
+              <p id="search-dataForm" class="valid-syntax">
+                Valid Format: True
+              </p>
+              <p id="search-dataDisposable" class="disposable">
+                disposable: false
+              </p>
+              <p class="free" id="search-dataFree">Free: True</p>
             </div>
           </div>
         </div>
