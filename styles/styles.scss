@@ -215,11 +215,19 @@ nav {
       display: flex;
       flex: wrap;
       flex-direction: column;
+      .searchresults {
+        .email {
+          font-size: 1.2rem;
+        }
+      }
       .input-and-desk {
+        margin-right: 20px;
         h1 {
         }
 
         .search {
+          padding-right: 0;
+          padding-left: 0;
           input {
             width: 80%;
             padding: 0;
