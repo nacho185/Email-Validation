@@ -23,28 +23,28 @@ searchButton.addEventListener("click", () => {
     .then((data) => {
       /*email data*/
       let emailData = data["email"];
-      searchEmailData.textContent = "Email Address:  " + emailData;
+      searchEmailData.textContent = "Email Address: " + " " + emailData;
       /*end email data*/
       /*domain data*/
       let domainData = data["domain"];
-      searchDomainData.textContent = "Domain:    " + domainData;
+      searchDomainData.textContent = "Domain: " + " " + domainData;
       /*end domain data*/
       /*valid form?*/
       let formData = data["format_valid"];
-      searchFormData.textContent = "Valid Format:    " + formData;
+      searchFormData.textContent = "Valid Format: " + " " + formData;
       /*end valid form?*/
       /*searchDisposableData*/
       let disposableData = data["disposable"];
-      searchDisposableData.textContent = "Disposable:    " + disposableData;
+      searchDisposableData.textContent = "Disposable: " + " " + disposableData;
       /*end searchDisposableData*/
       /*free*/
       let freeData = data["free"];
-      searchFreeData.textContent = "Free: " + freeData;
+      searchFreeData.textContent = "Free: " + " " + freeData;
       /*end free*/
 
       /*did you mean*/
       let didYouMeanData = data["did_you_mean"];
-      searchMeanData.textContent = "Did You Mean: " + didYouMeanData;
+      searchMeanData.textContent = "Did You Mean: " + " " + didYouMeanData;
       /*end did you mean*/
     })
     .catch((err) => {
