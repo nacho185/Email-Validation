@@ -207,14 +207,18 @@ nav {
   .display-wrapper {
     .display {
       width: 100%;
-      padding: 10px 40px 0 20px;
+      padding: 10px 10px;
       margin: 0 auto;
       font-size: 1rem;
       justify-content: flex-start;
-
+      font-size: 0.7rem;
+      display: flex;
+      flex: wrap;
+      flex-direction: column;
       .input-and-desk {
         h1 {
         }
+
         .search {
           input {
             width: 80%;
