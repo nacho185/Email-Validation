@@ -27,7 +27,7 @@ searchButton.addEventListener("click", () => {
       /*end email data*/
       /*domain data*/
       let domainData = data["domain"];
-      searchDomainData.textContent = "domain:    " + domainData;
+      searchDomainData.textContent = "Domain:    " + domainData;
       /*end domain data*/
       /*valid form?*/
       let formData = data["format_valid"];

@@ -3,6 +3,7 @@ $headingBgColor: #eef1f1;
 $primary-color: #0e7162;
 $secondary-color: #666666;
 $form-bg: #fff;
+$third-color: #710e1d;
 /*end variables*/
 
 /*global*/
@@ -28,7 +29,7 @@ nav {
   .branding {
     h1 {
       font-size: 2rem;
-      color: #555;
+      color: $third-color;
     }
     h3 {
       font-size: 1.5rem;
@@ -126,16 +127,22 @@ nav {
       height: 300px;
       width: 400px;
       padding: 10px 20px 10px 20px;
+      color: $third-color;
       .email {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid #0e7162;
         padding-bottom: 10px;
+        font-size: 1.5rem;
+        color: $primary-color;
       }
       .normal-format {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        p {
+          font-size: 1.5rem;
+        }
       }
     }
   }
