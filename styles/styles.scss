@@ -2,7 +2,7 @@
 $headingBgColor: #eef1f1;
 $primary-color: #0e7162;
 $secondary-color: #666666;
-$form-bg: #f8f8f8;
+$form-bg: #f0f0f0;
 /*end variables*/
 
 /*global*/
@@ -87,6 +87,7 @@ nav {
     background-color: $form-bg;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     .input-and-desk {
       align-items: center;
@@ -120,11 +121,34 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
       height: fit-content;
       padding: 10px 50px;
+      p {
+      }
     }
   }
 }
 
 /*end heading-wrapper*/
+/*media queries*/
+@media (max-width: 1075px) {
+  .heading-wrapper {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .header-img {
+      .fa-user-secret {
+        text-align: center;
+      }
+    }
+  }
+  .display-wrapper {
+    .display {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

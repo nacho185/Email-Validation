@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/f78f2b17c0.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Email validation</title>
   </head>
   <body>
@@ -22,12 +23,32 @@
 
     <section class="heading-wrapper">
       <div class="container">
-        <div class="heading-text-wrapper">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          class="heading-text-wrapper"
+        >
           <h1>Email Validation & Verification</h1>
           <h3>Measure email deliverability & quality</h3>
         </div>
         <div class="header-img">
-          <i class="fas fa-user-secret"></i>
+          <i
+            data-aos="fade-left"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            class="fas fa-user-secret"
+          ></i>
         </div>
       </div>
     </section>
@@ -38,7 +59,7 @@
           <div class="input-and-desk">
             <h1>No more spam!!</h1>
             <div class="search">
-              <input type="text" />
+              <input placeholder="Search an email..." type="text" />
               <i class="fas fa-search"></i>
             </div>
           </div>
@@ -60,6 +81,10 @@
     </section>
 
     <!--scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
