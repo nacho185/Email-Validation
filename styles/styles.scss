@@ -14,11 +14,11 @@ $third-color: #710e1d;
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  overflow-x: hidden;
 }
 .container {
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 /*scrollbar*/
 /* width */
@@ -96,6 +96,7 @@ nav {
   height: 100vh;
 
   .display {
+    overflow-x: hidden;
     border-top: 1px solid rgb(241, 236, 236);
     padding: 50px 0;
     width: 900px;
@@ -139,6 +140,7 @@ nav {
       }
     }
     .searchresults {
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -170,4 +172,56 @@ nav {
 /*end heading-wrapper*/
 /*media queries*/
 @media (max-width: 1075px) {
+  .heading-wrapper {
+    padding-top: 40px;
+    overflow: hidden;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      .header-img {
+        text-align: center;
+      }
+    }
+  }
+  .display-wrapper {
+    .display {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 15px 90px;
+      .searchresults {
+        width: 100%;
+        background: #fff;
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .heading-wrapper {
+    height: 100%;
+    .container {
+      .header-img {
+      }
+    }
+  }
+  .display-wrapper {
+    .display {
+      width: 100%;
+      padding: 10px 40px 0 20px;
+      margin: 0 auto;
+      font-size: 1rem;
+      justify-content: flex-start;
+
+      .input-and-desk {
+        h1 {
+        }
+        .search {
+          input {
+            width: 80%;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
