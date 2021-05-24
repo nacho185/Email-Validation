@@ -59,14 +59,18 @@
           <div class="input-and-desk">
             <h1>No more spam!!</h1>
             <div class="search">
-              <input placeholder="Search an email..." type="text" />
-              <i class="fas fa-search"></i>
+              <input
+                id="search-value"
+                placeholder="Search an email..."
+                type="text"
+              />
+              <i id="button-search" class="fas fa-search"></i>
             </div>
           </div>
           <div class="searchresults">
             <div class="normal-format">
-              <p class="email">email adress</p>
-              <p class="domain">mailto</p>
+              <p id="search-dataEmail" class="email"></p>
+              <p id="search-dataDomain" class="domain"></p>
               <p class="valid-syntax">true/false</p>
               <p class="disposable">true//false</p>
               <p class="webmail">false</p>
