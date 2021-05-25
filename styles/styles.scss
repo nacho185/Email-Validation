@@ -173,12 +173,15 @@ nav {
 /*media queries*/
 @media (max-width: 1075px) {
   .heading-wrapper {
+    height: 100%;
     padding-top: 40px;
     overflow: hidden;
     .container {
       display: grid;
       grid-template-columns: 1fr;
       .header-img {
+        margin-top: 0px;
+        padding: 0;
         text-align: center;
       }
     }
