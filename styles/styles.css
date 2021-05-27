@@ -39,6 +39,7 @@ body {
 /*nav*/
 nav {
   overflow-x: hidden;
+  background: #f8f8f8;
   padding: 10px 0;
 }
 
@@ -257,6 +258,7 @@ nav .branding h3 {
   .heading-wrapper {
     height: 100%;
   }
+  /*end media queries*/
   .display-wrapper .display {
     width: 100%;
     padding: 10px 10px;
