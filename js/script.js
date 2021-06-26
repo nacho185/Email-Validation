@@ -21,13 +21,15 @@ searchButton.addEventListener("click", () => {
   )
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       /*email data*/
       let emailData = data["email"];
       searchEmailData.textContent = "Email Address: " + " " + emailData;
       /*end email data*/
       /*domain data*/
-      let domainData = data["domain"];
-      searchDomainData.textContent = "Domain: " + " " + domainData;
+      let domainData = data["score"];
+
+      searchDomainData.textContent = "Score: " + " " + domainData;
       /*end domain data*/
       /*valid form?*/
       let formData = data["format_valid"];
